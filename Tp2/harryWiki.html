@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.6.0/css/all.css">
+    <link href="https://fonts.cdnfonts.com/css/harry-potter" rel="stylesheet">
+    <title>Harry Potter Wiki</title>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+    <div class="halo"></div>
+    <header class="display_center">
+        <div class="evenly display_flex w100">
+            <img class="fotos_header " src="assets/images/g-Photoroom.png">
+            <img class="fotos_header"  src="assets/images/h-Photoroom.png">
+            <img class="tamaño_header " src="assets/images/Wiki-Potter-5-29-2025.png">
+            <img class="fotos_header" src="assets/images/r-Photoroom.png">
+            <img class="fotos_header" src="assets/images/s-Photoroom.png">
+        </div>
+    </header>
+    
+    <main>
+        <div class="filtro display_flex evenly">
+            <div>
+                <i class="fa-solid fa-magnifying-glass letra margin1"></i>
+                 <input type="text" id="buscador" placeholder="Buscar personaje..." />
+            </div>
+            <div class="Casas">
+                <label for="filtroCasa" class="label_casas letra margin1">Filtrar por casa:</label>
+                <select id="filtroCasa" class="mouse">
+                    <option value="todos">Todas</option>
+                    <option value="Gryffindor">Gryffindor</option>
+                    <option value="Slytherin">Slytherin</option>
+                    <option value="Ravenclaw">Ravenclaw</option>
+                    <option value="Hufflepuff">Hufflepuff</option>
+                </select>
+            </div>
+            
+        </div>
+        <div class="spinner-container display_center">
+            <div id="spinner" class="spinner"></div>
+        </div>
+        <div id="contenedor-error" class="display_center error" style="display: none;">
+            <img class="fotos_header " src="assets/images/g-Photoroom.png">
+            <div>Error al cargar la pagina.Intente nuevamente</div>
+        </div>
+        <section id="mi-container" class="display_center"></section>
+        <div id="ver-mas-container" class="display_center">
+            <button id="btn-ver-mas" class="boton_mas mouse boton letra ver_mas bold border maroon" style="display: none;">Ver más</button>
+        </div>
+    </main>
+    <footer >
+        <p class="letra">© 2025 Wiki Potter. Todos los derechos reservados.</p>
+        <div>
+            <a href="#" class="letra mouse underline">Inicio</a> |
+            <a href="#" class="letra mouse underline">Sobre nosotros</a> |
+            <a href="#" class="letra mouse underline">Contacto</a>
+        </div>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'});" class="mouse scroll border">
+            <i class="fa-solid fa-arrow-up icono_scroll"></i>
+        </button>
+    </footer>
+    
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/card.js"></script>
+
+
+
+</body>
+</html>
