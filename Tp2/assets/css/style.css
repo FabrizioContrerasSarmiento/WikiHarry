@@ -1,0 +1,437 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+  text-decoration: none;
+  list-style: none;
+}
+
+@import url('https://fonts.cdnfonts.com/css/harry-potter');
+
+main,header,footer{
+    max-width: 1920px;
+}
+
+img{
+    width:100%;
+    height:auto;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.display_flex, .display_center{
+    display:flex;
+}
+
+.evenly{
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.w100{
+  width:100%;
+}
+
+.nombre{
+  font-size:1.3em;
+}
+
+.display_center{
+    align-items:center;
+    justify-content:center;
+}
+
+.l_height{
+  line-height: 1.5em;
+}
+
+.mouse{
+  cursor:pointer;
+}
+
+.spinner-container {
+  height: 100vh;           
+}
+
+.spinner {
+  border: 8px solid #610808; 
+  border-top: 8px solid #e19f11; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 40%;
+  left: 48%;
+}
+
+.boton{
+  padding:0.5em;
+  border-radius: 3em;
+  background-color: #f6a136;
+  outline:none;
+}
+
+.boton:hover{
+  background-color: rgb(255, 128, 0);
+  transition:800ms ease;
+}
+
+.ver_mas{
+  height:3em;
+  width:7em;
+  font-size:1em
+}
+
+.boton_volver{
+  padding:0.8em;
+}
+
+
+.scroll{
+  border-radius: 2em;
+  margin-top:1em;
+}
+
+.scroll:hover{
+  background-color: #f6a136;
+  transition:800ms ease;
+  border-style:solid;
+}
+
+.icono_scroll{
+  padding:0.6em;
+}
+
+.shadow{
+  text-shadow: 2px 2px 4px rgba(0,0,0,1);
+}
+
+.botones_posicion{
+  justify-content: center;
+  position:relative;
+  top:1em;
+}
+
+.tamaño_fotos{
+  width:8em;
+  height: 12em;
+  object-fit: cover;
+  margin:1em;
+  border-radius: 3em;
+}
+
+.fotos_header{
+  width: 7em ;
+  height:7.5em;
+}
+
+.tamaño_header{
+  width:20em;
+}
+
+header{
+  height:20vh;
+  background-color: #610808;
+}
+
+.amarillo{
+  background-color: #e19f11;
+}
+
+.letra{
+  color:white;
+}
+
+.carta_personaje{
+  font-size:1.2em;
+  width:80%;
+  text-align: center;
+  border:0.1em solid black;
+  border-radius: 3em;
+  background-color: rgba(225, 159, 17, 0.8); 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.filtro{
+  height: 8vh;
+  background-color: black;
+}
+
+#mi-container{
+  flex-wrap: wrap;
+  margin-top:3em;
+}
+
+.card{
+  width:20%;
+  flex-direction: column;
+  margin-bottom:4em;
+  padding:0.5em;
+}
+
+.font_harry{
+  font-family: 'Harry Potter', sans-serif;
+}
+
+.informacionCompleta{
+  line-height: 1.7em;
+  margin-top:4em;
+  flex-direction: column;
+   border:0.1em solid #f6a136;
+}
+
+.borde_carta{
+  width:100%;
+  background-color:#610808;
+  padding: 1.5em;
+  font-size: 2em;
+}
+
+.color_potter{
+  color:#e19f11
+}
+
+.bordo{
+  color:#610808;
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.halo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      pointer-events: none;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(57, 255, 20, 0.8), transparent 90%);
+      box-shadow: 0 0 20px 6px rgba(57, 255, 20, 0.8);
+      mix-blend-mode: screen;
+    }
+
+@keyframes aparecerCarta {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(30px);
+  }
+}
+
+.carta_personaje {
+  opacity: 0; 
+  animation: aparecerCarta 1s ease-out forwards;
+  box-shadow: 0 0 15px rgba(97, 195, 225, 0.5);
+  background-color: rgba(66, 175, 202, 0.5); 
+}
+
+.carta_personaje:hover{
+  transition:800ms ease;
+  background-color: #610808;
+}
+
+.foto_card{
+  width:100%;
+  background-color:rgba(0, 0, 0, 0.6) ;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+}
+
+#caracteristicas{
+  height: 210vh;
+}
+
+.tabla3{
+  padding:2em;
+}
+
+#filtroCasa {
+  padding: 7px 14px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+}
+
+.margin1{
+  margin-right:1em;
+}
+
+.label_casas {
+  font-family: 'Segoe UI', sans-serif; 
+  font-size: 18px;
+  font-weight: 600;
+}
+
+main {
+  background-image: url("../images/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+.tabla-personaje {
+  background-color: rgba(0, 0, 0, 0.6); 
+  color: white; 
+  width: 100%;
+  max-width: 700px;
+  border-collapse: collapse;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  font-family: Arial, sans-serif;
+}
+
+.tabla-personaje td {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0.8em 1em;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.tabla-personaje tr:last-child td {
+  border-bottom: none;
+}
+
+.tabla-personaje td:first-child {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+  width: 40%;
+  background-color: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+.botones_info{
+  margin-bottom: 4em;
+  padding:1em;
+  font-size:0.73em;
+}
+
+.maroon{
+  color:maroon;
+}
+
+.error{
+  flex-direction: column;
+  color: red;
+  font-weight: bold;
+  font-size: 1.3rem;
+  text-align: center;
+  position:relative;
+  top:5em;
+  height:13em;
+  width:100%;
+  background-color:beige;
+}
+
+.border{
+  border:black;
+}
+
+.boton_mas{
+  margin-bottom: 4em;
+}
+
+footer{
+  height: 18vh;
+  background-color: #610808;
+  text-align: center;
+  padding: 20px;
+  line-height: 1.5em;
+}
+
+#buscador {
+  padding: 0.7em;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+}
+
+@media only screen and ( max-width:992px ){
+  .card{
+    width:30%;
+  }
+
+  .tamaño_header{
+    width: 15em;
+  }
+
+  .fotos_header{
+    width:3.5em;
+    height:4em;
+  }
+
+  .nombre{
+    font-size: 1em;
+  }
+
+  .label_casas{
+    font-size: 14px;
+    width:6em;
+  }
+
+  #filtroCasa{
+    width:6em;
+  }
+
+  #buscador{
+    width:12em
+  }
+
+  .botones_info{
+    font-size: 0.55em;
+  }
+
+}
+
+@media (max-width: 700px){
+  .card{
+    width:40%;
+  }
+
+  #buscador{
+    width:10em;
+  }
+
+
+}
+
+
